@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-export default class Login extends Component {
-    render() {
+function Login() {
         return (
             <form>
 
-                <h3>Log in</h3>
-
+                <h3 className="form-title">Log in</h3>
+                <h4>User</h4>
                 <div className="form-group">
-                    <label>Email</label>
+                    <label className="form-label">Email</label>
                     <input type="email" className="form-control" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label className="form-label">Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
@@ -24,11 +24,11 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
+                <Link to={"/getcode"}><button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button></Link>
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>
                 </p>
             </form>
         );
-    }
 }
+export default Login;

@@ -8,9 +8,20 @@ body {
   font-weight: 400;
   font-family: sans-serif;
   background: #12c2e9;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right,  #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
+}
+
+.form-space {
+  height:20px
+}
+
+.form-title {
+  color: #ffffff;
+}
+.form-label {
+  color: #ffffff;
 }
 
 body, html, .App, #root, .outer {
@@ -33,7 +44,18 @@ body, html, .App, #root, .outer {
 .inner {
   width: 450px;
   margin: auto;
-  background: #ffffff;
+  background: #2e465e;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+
+.inner-nurse {
+  width: 550px;
+  margin: auto;
+  background: #e9d4d4;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
@@ -52,8 +74,17 @@ body, html, .App, #root, .outer {
   padding-bottom: 20px;
 }
 
+.outer h4 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
 .custom-control-label {
   font-weight: 400;
+  color: #ddd0d0;
 }
 
 .forgot-password,
@@ -61,10 +92,40 @@ body, html, .App, #root, .outer {
   text-align: right;
   font-size: 13px;
   padding-top: 10px;
-  color: #7f7d7d;
+  color: #a79f9f;
   margin: 0;
 }
 
 .forgot-password a {
   color: #167bff;
+}
+
+.btn-status {
+  background-color: rgb(236, 236, 57);
+  padding: 2px;
+  width: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  /* border: 10px; */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #f3a7a7;
 }
